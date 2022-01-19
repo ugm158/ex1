@@ -41,9 +41,16 @@ let menuData = [
 
 /**
  menuHtml = menuHtml + `<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>`;
+
+ row =   {
+        title: 'Store',
+        url: 'store.html'
+    }
  */
 menuHtml = '';
 for(let row of menuData){
-    menuHtml += `<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="${row.url}">${row.title}</a></li>`;
+    menuHtml += `<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="${row.url}">${row.title}</a></li>\n`;
+
+    console.log(menuHtml);
 }
 menu.innerHTML = menuHtml;//將 HTML 寫入節點
