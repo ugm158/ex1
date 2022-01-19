@@ -26,15 +26,15 @@ let menuData = [
         url: 'index.html'
     },
     {
-        title: 'About',
+        title: '關於我們',
         url: 'about.html'
     },
     {
-        title: 'Products',
+        title: '商品展示',
         url: 'products.html'
     },
     {
-        title: 'Store',
+        title: '購物車',
         url: 'store.html'
     }
 ];
