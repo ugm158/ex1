@@ -22,7 +22,7 @@ let menu = document.getElementById('menu');
 
 let menuData = [
     {
-        title: '首頁',
+        title: '首頁1',
         url: 'index.html'
     },
     {
@@ -38,6 +38,8 @@ let menuData = [
         url: 'store.html'
     }
 ];
+let x = 'title';
+console.log(menuData[0]['url']);
 
 /**
  menuHtml = menuHtml + `<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>`;
@@ -49,8 +51,11 @@ let menuData = [
  */
 menuHtml = '';
 for(let row of menuData){
-    menuHtml += `<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="${row.url}">${row.title}</a></li>\n`;
 
-    console.log(menuHtml);
+    menuHtml += '<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="' + row.url + '">' + row.title + '</a></li>\n';
+
+    // menuHtml += `<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="${row.url}">${row.title}</a></li>\n`;
+
+    // console.log(menuHtml);
 }
 menu.innerHTML = menuHtml;//將 HTML 寫入節點
