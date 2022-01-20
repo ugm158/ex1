@@ -38,8 +38,8 @@ let menuData = [
         url: 'store.html'
     }
 ];
-let x = 'title';
-console.log(menuData[0]['url']);
+// let x = 'title';
+// console.log(menuData[0]['url']);
 
 /**
  menuHtml = menuHtml + `<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>`;
